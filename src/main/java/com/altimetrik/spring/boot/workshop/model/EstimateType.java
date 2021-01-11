@@ -8,7 +8,8 @@ import lombok.Getter;
 public enum EstimateType {
 
     BRAKE("BRAKE"),
-    TIRE("TIRE");
+    TIRE("TIRE"),
+    OTHER("OTHER");
 
     private String type;
 }

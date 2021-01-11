@@ -23,6 +23,7 @@ public class WorkshopService {
     private void initializeLaborChargeMap(Map<String, Double> laborChargeMap) {
         laborChargeMap.put(EstimateType.BRAKE.getType(), 100.00);
         laborChargeMap.put(EstimateType.TIRE.getType(), 80.00);
+        laborChargeMap.put(EstimateType.OTHER.getType(), 100.00);
     }
 
     public EstimateResponse getWorkshopEstimate(EstimateRequest estimateRequest){

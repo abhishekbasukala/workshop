@@ -1,15 +1,13 @@
 package com.altimetrik.spring.boot.workshop.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class EstimateResponse {
+@EqualsAndHashCode(callSuper=false)
+public class EstimateResponse extends BaseResponse{
 
     private Double totalCostEstimate;
 

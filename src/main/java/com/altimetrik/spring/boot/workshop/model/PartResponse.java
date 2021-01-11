@@ -1,16 +1,14 @@
 package com.altimetrik.spring.boot.workshop.model;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class PartResponse {
+@EqualsAndHashCode(callSuper=false)
+public class PartResponse extends BaseResponse {
 
     private String name;
     private String description;
