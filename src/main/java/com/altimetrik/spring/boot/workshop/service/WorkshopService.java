@@ -27,6 +27,7 @@ public class WorkshopService {
     }
 
     public EstimateResponse getWorkshopEstimate(EstimateRequest estimateRequest){
+        log.info("Getting Workshop Estimate");
         Map<String, Double> laborChargeMap = new HashMap<>();
         initializeLaborChargeMap(laborChargeMap);
 
